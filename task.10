@@ -1,0 +1,7 @@
+def pair_sum(arr, target):
+    for x in arr:
+        for y in arr:
+            if x != y and x + y == target:
+                return x, y
+arr = [2, 4, 3, 7]
+print(pair_sum(arr, 10))
