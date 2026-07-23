@@ -1,0 +1,13 @@
+def longest_increasing_subarray(arr):
+    longest = []
+    current = []
+    for num in arr:
+        if not current or num > current[-1]:
+            current.append(num)
+        else:
+            current = [num]
+        if len(current) > len(longest):
+            longest = current.copy()
+    return longest
+arr = [1, 2, 3, 1, 2]
+print(longest_increasing_subarray(arr))
