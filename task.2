@@ -1,0 +1,7 @@
+def right_rotate_by_one(arr):
+    # last element comes to front
+    if not arr:
+        return arr
+    return [arr[-1]] + arr[:-1]
+arr = [1, 2, 3, 4, 5]
+print(right_rotate_by_one(arr))
