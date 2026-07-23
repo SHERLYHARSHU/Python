@@ -1,0 +1,11 @@
+def rearrange(arr):
+    result = []
+    for x in arr:
+        if x < 0:
+            result.append(x)
+    for x in arr:
+        if x >= 0:
+            result.append(x)
+    return result
+arr = [1, -2, 3, -4, 5]
+print(rearrange(arr))
