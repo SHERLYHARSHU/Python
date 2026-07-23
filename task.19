@@ -1,0 +1,8 @@
+def find_leaders(arr):
+    leaders = []
+    for i in range(len(arr)):
+        if arr[i] >= max(arr[i:]):
+            leaders.append(arr[i])
+    return leaders
+arr = [16, 17, 4, 3, 5, 2]
+print(find_leaders(arr))
