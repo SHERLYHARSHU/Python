@@ -1,0 +1,7 @@
+def majority_element(arr):
+    for x in arr:
+        if arr.count(x) > len(arr) // 2:
+            return x
+    return None
+arr = [2, 2, 1, 2, 3, 2, 2]
+print(majority_element(arr))
