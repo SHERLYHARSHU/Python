@@ -1,0 +1,9 @@
+def all_pairs(arr, target):
+    result = []
+    for x in arr:
+        for y in arr:
+            if x < y and x + y == target:
+                result.append((x, y))
+    return result
+arr = [1, 2, 3, 4, 5]
+print(all_pairs(arr, 6))
