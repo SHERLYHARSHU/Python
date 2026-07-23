@@ -1,0 +1,9 @@
+def stock_profit(prices):
+    profit = 0
+    for buy in prices:
+        for sell in prices:
+            if sell - buy > profit:
+                profit = sell - buy
+    return profit
+prices = [7, 1, 5, 3, 6, 4]
+print(stock_profit(prices))
